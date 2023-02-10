@@ -1,0 +1,340 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Macondo', cursive;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    background-color:  #4AFBE6;
+    padding: 20px;;
+    color: black;
+}
+.navetop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #0b69e4;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.searchinput{
+    border:none;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color:#EB870A ;
+}
+.pishnahadmahdud{
+    font-size: 20px;
+    border-bottom : 2px solid #E2404C ;
+    cursor: pointer;
+
+}
+.navebottom{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.menuitem{
+    margin-right: 35px;
+    cursor: pointer;
+    color:#E2404C ;
+    font-weight: 400;
+
+}
+.slider{
+    background-image:url(./img/backgroundslider.jpg) ;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    z-index: 1;
+    overflow: hidden;
+}
+.mohtaviatslider{
+    display: flex;
+    width: 500vw;
+    transition: 1s all ease-in-out;
+}
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slidbg{
+   width: 750px; 
+   height: 750px;
+   border-radius: 50%;
+   /* background-color: powderblue; */
+   position: absolute;
+/* z-index: -1; */
+}
+.slider img{
+    z-index: 1;
+}
+
+.tozihatslide{
+    position: absolute;
+  top: 10%;
+    right: 5%;
+    color: yellow;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 1;
+    
+}
+.gheymatslider{
+    position: absolute;
+    top: 10%;
+      left: 5%;
+      color: yellow;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 400;
+      border: 1px solid pink;
+      z-index: 1;
+}
+.buybtn{
+    position: absolute;
+    top: 55%;
+      right: 3%;
+    background-color:powderblue;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 900;
+      border: 1px solid pink;
+      z-index: 1;
+      color: rgb(225, 250, 3);
+      font-size: 50px;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: black;
+      font-family:   'Cairo', sans-serif;
+      cursor: pointer;
+}
+.buybtn:hover{
+   background-color: black; 
+   color: white;
+}
+.slideritem:nth-child(1) .slidbg{
+    background-color: powderblue;
+}
+.slideritem:nth-child(2) .slidbg{
+    background-color: pink;
+}
+.slideritem:nth-child(3) .slidbg{
+    background-color: #32bcfc;
+}
+.slideritem:nth-child(4) .slidbg{
+    background-color:#F32E3C;
+}
+.slideritem:nth-child(5) .slidbg{
+    background-color: rgb(245, 240, 240);
+}
+.slideritem:nth-child(1)  .gheymatslider{
+    color: yellow;
+}
+.slideritem:nth-child(2)  .gheymatslider{
+    color: pink;
+}
+.slideritem:nth-child(3)  .gheymatslider{
+    color: #32bcfc;
+}
+.slideritem:nth-child(4)  .gheymatslider{
+    color: #F32E3C;
+}
+.slideritem:nth-child(5)  .gheymatslider{
+    color: rgb(240, 231, 231);
+  
+}
+.feutures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.featur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feutures  img{
+    width: 50px;
+    height: 50px;
+}
+.feuturtitel{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    width: 50%;
+    height: 100px;
+}
+.tozihat{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+.mahsulat{
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;  
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.payment{
+    width:500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top  :0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 25px 12px rgba(189,189,189,0.81); 
+    box-shadow: 0px 0px 25px 12px rgba(7, 247, 247, 0.81);
+    display: none;
+}
+.jozatpardakht{
+    font-size: 20px;
+    color: lightgray;
+}
+label{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+.jayprdakht{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.carticon{
+    display: flex;
+    margin-right: 10px;
+}
+.atelatcart{
+    display: flex;
+    justify-content: space-between;
+}
+.kochak{
+    width: 30%;
+}
+.pardakhtvajh{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 20px 12px rgba(189,189,189,0.81); 
+    box-shadow: 0px 0px 20px 12px rgba(7, 247, 247, 0.81);
+    border: none;
+    background-color:greenyellow;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Macondo', cursive;
+    font-family: 'Cairo', sans-serif;
+
+}
+.close{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    background-color: lightgrey;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.axmahsul{
+    width: 50%;
+
+   
+  
+}
+.tozihatmahsul{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    padding: 50px;
+    width: 40%;
+}
+.mahsultitel{
+    font-size: 75px;
+    font-weight: 900;
+}
+.nokat{
+   font-style: 24px; 
+   color: gray;
+}
+.colors,.sizes{
+    display: flex;
+}
+.color{
+    
+  width: 32px;  
+  height: 32px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: gray;
+  cursor: pointer;
+}
+.color:last-child{
+    background-color: darkblue;
+    cursor: pointer;
+}
+.siz{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pardakht{
+    float: right;
+    padding: 10px 20px;
+    border-color: black;
+    color: white;font-weight: 560;
+    cursor: pointer;
+    background-color: black;
+}
+.pardakht:hover{
+    background-color: white;
+    color: black;
+}
+.gallery{
+    display: flex;
+  padding: 50px;
+}
+.galleryItem{
+    flex: 1;
+    padding: 50PX;
+}
+.galleryImg{
+   width: 100%; 
+}
+.back{
+   position:fixed; 
+  
+   right: 25px;
+   bottom: 40px;
+   box-shadow: 25px solid black;
+   width: 100%wv;
+   height: 100%vh;
+  
+}
